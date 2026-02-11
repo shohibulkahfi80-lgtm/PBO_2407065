@@ -9,8 +9,11 @@ class Cafe {
         this.nama = "default nama";
         this.alamat = "default alamat";
         System.out.println("nama cafe adalah " + this.nama);
-        System.out.println("alamat cafe adalah " + this.alamat);        
+        System.out.println("alamat cafe adalah " + this.alamat);    
+    }
 
+    void buka() {
+        System.out.println("Cafe buka pada pukul 08.00");
     }
 }
 
@@ -19,6 +22,7 @@ public class main {
 
         // Membuat objek
         Cafe cafe1 = new Cafe();
+        cafe1.buka();
 
         // Mengubah data
         cafe1.nama = "Kopi Kenangan";
