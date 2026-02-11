@@ -19,8 +19,8 @@ class Cafe {
      //   this.nama = "default nama";
      //   this.alamat = "default alamat";
      //   System.out.println("nama cafe adalah " + this.nama);
-    //    System.out.println("alamat cafe adalah " + this.alamat);
-  //  }
+     //   System.out.println("alamat cafe adalah " + this.alamat);
+   // }
 
     // Method
     void buka() {
