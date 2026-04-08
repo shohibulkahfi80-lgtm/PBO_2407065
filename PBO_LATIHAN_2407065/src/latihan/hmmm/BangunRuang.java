@@ -1,17 +1,30 @@
 package latihan.hmmm;
 
-
 public class BangunRuang extends BangunDatar {
     private double tinggi;
 
-    // constructor
     public BangunRuang(double panjang, double lebar, double tinggi) {
-        super(panjang, lebar); // ambil dari parent
+        super(panjang, lebar);
         this.tinggi = tinggi;
     }
 
-    // method hitung volume
-    public double hitungVolume() {
-        return hitungLuas() * tinggi; // pakai method dari parent
+    // 🔥 overriding method dari parent
+    @Override
+    public double hitungLuas() {
+        System.out.println("Menghitung luas alas di BangunRuang...");
+        return panjang * lebar;
+    }
+
+    public double hitungVolume(){
+        return hitungLuas()*tinggi;
+    }
+
+    public double hitungVolume2(){
+        return hitungLuas()*tinggi;
+    }
+
+    public void tampilkanInfoRuang(){
+        super.tampilkanHasil();
+        System.out.println("Tinggi : " + tinggi);
     }
 }
