@@ -10,7 +10,11 @@ public class Main {
         // h. Membuat beberapa menu dan memasukkan ke dalam cafe
         myCafe.tambahMenu(new Makanan("Nasi Goreng Spesial", 25000, "Makanan Utama"));
         myCafe.tambahMenu(new Makanan("Kentang Goreng", 15000, "Cemilan"));
-        myCafe.tambahMenu(new Minuman("Kopi Hitam", 12000, "Hot"));
+        myCafe.tambahMenu(new Minuman("Kopi Hitam", 12000, "Hot/Small"));
+        myCafe.tambahMenu(new Minuman("Kopi Hitam", 18000, "Hot/Large"));
+        myCafe.tambahMenu(new Minuman("Kopi Hitam", 12000, "Cold/Small"));
+        myCafe.tambahMenu(new Minuman("Kopi Hitam", 18000, "Cold/Large"));
+        myCafe.tambahMenu(new Minuman("Es Teh Manis", 5000, "Cold/Small"));
         myCafe.tambahMenu(new Minuman("Es Teh Manis", 8000, "Cold/Large"));
 
         double totalHarga = 0;
